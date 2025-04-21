@@ -1,0 +1,44 @@
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.deps.json
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.AssemblyInfo.cs
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\refint\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\ref\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.deps.json
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.AssemblyInfo.cs
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\refint\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\ref\SchoolSystem.Domain.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.deps.json
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\refint\SchoolSystem.Domain.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\ref\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.deps.json
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.AssemblyInfo.cs
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\refint\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\ref\SchoolSystem.Domain.dll

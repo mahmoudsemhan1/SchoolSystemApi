@@ -1,0 +1,76 @@
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.deps.json
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.runtimeconfig.json
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.pdb
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.AssemblyInfo.cs
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSy.F1753FB0.Up2Date
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\refint\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.pdb
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.genruntimeconfig.cache
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\ref\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.deps.json
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.runtimeconfig.json
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.pdb
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.AssemblyInfo.cs
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSy.F1753FB0.Up2Date
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\refint\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.pdb
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.genruntimeconfig.cache
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\ref\SchoolSystem.Infrastructure.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.deps.json
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.runtimeconfig.json
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.pdb
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSy.F1753FB0.Up2Date
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\refint\SchoolSystem.Infrastructure.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.pdb
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.genruntimeconfig.cache
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\ref\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.deps.json
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.runtimeconfig.json
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Infrastructure.pdb
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.AssemblyInfo.cs
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSy.F1753FB0.Up2Date
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\refint\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.pdb
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.genruntimeconfig.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\ref\SchoolSystem.Infrastructure.dll

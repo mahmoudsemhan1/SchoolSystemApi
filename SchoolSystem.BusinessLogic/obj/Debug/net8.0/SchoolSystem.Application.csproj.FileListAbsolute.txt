@@ -1,0 +1,60 @@
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.csproj.AssemblyReference.cache
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.AssemblyInfoInputs.cache
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.AssemblyInfo.cs
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.deps.json
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSy.82EB8734.Up2Date
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\refint\SchoolSystem.Application.dll
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Ma7moud\source\repos\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\ref\SchoolSystem.Application.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.deps.json
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.csproj.AssemblyReference.cache
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.AssemblyInfoInputs.cache
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.AssemblyInfo.cs
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSy.82EB8734.Up2Date
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\refint\SchoolSystem.Application.dll
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Ma7moud\Desktop\for Backend\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\ref\SchoolSystem.Application.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.deps.json
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSy.82EB8734.Up2Date
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\refint\SchoolSystem.Application.dll
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\ref\SchoolSystem.Application.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.deps.json
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\bin\Debug\net8.0\SchoolSystem.Domain.pdb
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.csproj.AssemblyReference.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.AssemblyInfoInputs.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.AssemblyInfo.cs
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSy.82EB8734.Up2Date
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\refint\SchoolSystem.Application.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.pdb
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\ref\SchoolSystem.Application.dll

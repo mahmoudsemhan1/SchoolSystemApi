@@ -1,0 +1,118 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C9606EE8-9B0C-4DC1-8BB5-D6D7843CB6AD}|SchoolSystem.Infrastructure\\SchoolSystem.Infrastructure.csproj|c:\\users\\ma7moud\\desktop\\new project\\schoolsystemapi\\schoolsystem.infrastructure\\repositories\\classrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9606EE8-9B0C-4DC1-8BB5-D6D7843CB6AD}|SchoolSystem.Infrastructure\\SchoolSystem.Infrastructure.csproj|solutionrelative:schoolsystem.infrastructure\\repositories\\classrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0947CD5-7BEF-4DA1-8FEE-11E374DD6953}|SchoolSystem.BusinessLogic\\SchoolSystem.Application.csproj|c:\\users\\ma7moud\\desktop\\new project\\schoolsystemapi\\schoolsystem.businesslogic\\dtos\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0947CD5-7BEF-4DA1-8FEE-11E374DD6953}|SchoolSystem.BusinessLogic\\SchoolSystem.Application.csproj|solutionrelative:schoolsystem.businesslogic\\dtos\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0947CD5-7BEF-4DA1-8FEE-11E374DD6953}|SchoolSystem.BusinessLogic\\SchoolSystem.Application.csproj|c:\\users\\ma7moud\\desktop\\new project\\schoolsystemapi\\schoolsystem.businesslogic\\dtos\\classesdtos\\classinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0947CD5-7BEF-4DA1-8FEE-11E374DD6953}|SchoolSystem.BusinessLogic\\SchoolSystem.Application.csproj|solutionrelative:schoolsystem.businesslogic\\dtos\\classesdtos\\classinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DC1B63F8-B41E-45B2-A5CC-BBEB2F76053F}|SchoolSystemApi\\SchoolSystemApi.csproj|c:\\users\\ma7moud\\desktop\\new project\\schoolsystemapi\\schoolsystemapi\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DC1B63F8-B41E-45B2-A5CC-BBEB2F76053F}|SchoolSystemApi\\SchoolSystemApi.csproj|solutionrelative:schoolsystemapi\\controllers\\classescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C9606EE8-9B0C-4DC1-8BB5-D6D7843CB6AD}|SchoolSystem.Infrastructure\\SchoolSystem.Infrastructure.csproj|c:\\users\\ma7moud\\desktop\\new project\\schoolsystemapi\\schoolsystem.infrastructure\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9606EE8-9B0C-4DC1-8BB5-D6D7843CB6AD}|SchoolSystem.Infrastructure\\SchoolSystem.Infrastructure.csproj|solutionrelative:schoolsystem.infrastructure\\unitofwork\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C0947CD5-7BEF-4DA1-8FEE-11E374DD6953}|SchoolSystem.BusinessLogic\\SchoolSystem.Application.csproj|c:\\users\\ma7moud\\desktop\\new project\\schoolsystemapi\\schoolsystem.businesslogic\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C0947CD5-7BEF-4DA1-8FEE-11E374DD6953}|SchoolSystem.BusinessLogic\\SchoolSystem.Application.csproj|solutionrelative:schoolsystem.businesslogic\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystem.BusinessLogic\\DTOs\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "SchoolSystem.BusinessLogic\\DTOs\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystem.BusinessLogic\\DTOs\\MappingProfile.cs",
+              "RelativeToolTip": "SchoolSystem.BusinessLogic\\DTOs\\MappingProfile.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T14:10:42.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClassRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystem.Infrastructure\\Repositories\\ClassRepository.cs",
+              "RelativeDocumentMoniker": "SchoolSystem.Infrastructure\\Repositories\\ClassRepository.cs",
+              "ToolTip": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystem.Infrastructure\\Repositories\\ClassRepository.cs",
+              "RelativeToolTip": "SchoolSystem.Infrastructure\\Repositories\\ClassRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAswBsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T16:32:31.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystem.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "SchoolSystem.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystem.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "RelativeToolTip": "SchoolSystem.Infrastructure\\UnitOfWork\\UnitOfWork.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:40:40.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystem.BusinessLogic\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "SchoolSystem.BusinessLogic\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystem.BusinessLogic\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "SchoolSystem.BusinessLogic\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:40:10.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClassesController.cs",
+              "DocumentMoniker": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystemApi\\Controllers\\ClassesController.cs",
+              "RelativeDocumentMoniker": "SchoolSystemApi\\Controllers\\ClassesController.cs",
+              "ToolTip": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystemApi\\Controllers\\ClassesController.cs",
+              "RelativeToolTip": "SchoolSystemApi\\Controllers\\ClassesController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T15:37:55.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClassInformation.cs",
+              "DocumentMoniker": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystem.BusinessLogic\\DTOs\\ClassesDtos\\ClassInformation.cs",
+              "RelativeDocumentMoniker": "SchoolSystem.BusinessLogic\\DTOs\\ClassesDtos\\ClassInformation.cs",
+              "ToolTip": "C:\\Users\\Ma7moud\\Desktop\\new project\\SchoolSystemApi\\SchoolSystem.BusinessLogic\\DTOs\\ClassesDtos\\ClassInformation.cs",
+              "RelativeToolTip": "SchoolSystem.BusinessLogic\\DTOs\\ClassesDtos\\ClassInformation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-19T16:04:40.356Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

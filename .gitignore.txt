@@ -1,0 +1,32 @@
+# Build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+
+# VS Code settings
+.vscode/
+
+# Visual Studio working folder
+.vs/
+
+# Endpoint info
+**/EndpointInfo/
+
+# DLLs
+*.dll
+
+# Logs
+*.log
+
+# Database files
+*.mdf
+*.ldf
+
+# Publish output
+publish/
+
+# Secrets (لو عندك ملف secrets)
+secrets.json
