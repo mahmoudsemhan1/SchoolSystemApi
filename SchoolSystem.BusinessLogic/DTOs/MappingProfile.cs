@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using SchoolSystem.Application.DTOs.AttendanceDTOs;
 using SchoolSystem.Application.DTOs.ClassesDtos;
+using SchoolSystem.Application.DTOs.ClassroomDtos;
 using SchoolSystem.Application.DTOs.StudentsDTOs;
 using SchoolSystem.Application.DTOs.SubjectsDTOs;
 using SchoolSystem.Application.DTOs.TeachersDTOs;
@@ -22,6 +24,10 @@ namespace SchoolSystem.Application.DTOs
             CreateMap<Student, StudentDTo>().ReverseMap();
             CreateMap<StudentDTo, Student>()
                 .ForMember(dest => dest.StudentId, opt => opt.Ignore()); // علشان ما نغيّرش الـ ID
+            //for Attendance 
+            CreateMap<Student, StudentDtoForAttendance>()
+                 .ForMember(dest => dest.AttendDtoForStudentInfo,
+               opt => opt.MapFrom(src => src.Attendances));
 
             // teacher mapp
             CreateMap<Teacher, TeacherDto>();
@@ -35,7 +41,6 @@ namespace SchoolSystem.Application.DTOs
 
             // TimeTable Mapp 
             CreateMap<Timetable, TimetableDto>();
-
             // for classDto
             CreateMap<Class, ClassInformation>()
                 .ForMember(dest => dest.Students, opt => opt.MapFrom(src => src.Students))
@@ -45,6 +50,13 @@ namespace SchoolSystem.Application.DTOs
                     src.ClassSubjects.Select(cs => cs.subject)))
                 .ForMember(dest => dest.timetableDtos, opt => opt.MapFrom(src => src.Timetables))
                 .ReverseMap();  // Allows mapping back from ClassInformation to Class
+
+            //for ClassRoom 
+            CreateMap<Classroom, ClassroomDto>().ReverseMap();
+            //for Attendance
+            CreateMap<Attendance, AttendanceDto>().ReverseMap();
+            CreateMap<Attendance, AttendDtoForStudentInfo>();
+            //
         }
     }
 }

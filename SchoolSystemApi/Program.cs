@@ -3,6 +3,7 @@ using SchoolSystem.Application.DTOs;
 using SchoolSystem.Application.Interfaces;
 using SchoolSystem.Application.Services;
 using SchoolSystem.Infrastructure.Models;
+using SchoolSystem.Infrastructure.Repositories;
 using SchoolSystem.Infrastructure.UnitOfWork;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,8 +21,11 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 
-//add sevice for teacher
-
+//add sevice for the table I will need 
+//student
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddScoped<IStudentService, StudentServices>();
+//
 builder.Services.AddScoped<TeacherService>();
 builder.Services.AddScoped<ClassServices>();
 

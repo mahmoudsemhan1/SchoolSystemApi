@@ -11,6 +11,8 @@ namespace SchoolSystem.Application.Interfaces
         IClassRepository classRepository { get; }
         IGenericRepository<Subject> Subjects { get; }
         IGenericRepository<Class> Classes { get; }
+        IGenericRepository<Classroom> ClassRoomes { get; }
+        IGenericRepository<Attendance> Attendances { get; }
 
         Task<int> CompleteAsync();
     }

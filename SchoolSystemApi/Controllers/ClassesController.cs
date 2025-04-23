@@ -34,7 +34,7 @@ namespace SchoolSystemApi.Controllers
         /// </summary>
         /// <param name="ClassId"></param>
         /// <returns></returns>
-        [HttpGet("/InFormation/{ClassId}")]
+        [HttpGet("InFormation/{ClassId}")]
         public  async Task<IActionResult> GetClassInformation(int ClassId)
         {
             var ClassInfo= await _classServices.GetClassDetails(ClassId);

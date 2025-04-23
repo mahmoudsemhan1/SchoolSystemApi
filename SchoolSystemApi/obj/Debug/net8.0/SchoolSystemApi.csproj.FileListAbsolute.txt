@@ -613,3 +613,4 @@ C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\n
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.pdb
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.genruntimeconfig.cache
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\ref\SchoolSystemApi.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.sourcelink.json

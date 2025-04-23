@@ -58,3 +58,4 @@ C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\refint\SchoolSystem.Application.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.pdb
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\ref\SchoolSystem.Application.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.BusinessLogic\obj\Debug\net8.0\SchoolSystem.Application.sourcelink.json

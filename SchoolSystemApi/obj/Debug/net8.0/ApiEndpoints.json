@@ -1,5 +1,57 @@
 [
   {
+    "ContainingType": "SchoolSystemApi.Controllers.AttendancesController",
+    "Method": "GetAllAttendances",
+    "RelativePath": "api/Attendances",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.AttendancesController",
+    "Method": "CreateAttendace",
+    "RelativePath": "api/Attendances",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StudentId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.Nullable\u00601[[System.DateOnly, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Status",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.AttendancesController",
+    "Method": "GetAttendByID",
+    "RelativePath": "api/Attendances/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SchoolSystemApi.Controllers.ClassesController",
     "Method": "GetAllClasses",
     "RelativePath": "api/Classes",
@@ -57,6 +109,85 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.ClassesController",
+    "Method": "GetClassInformation",
+    "RelativePath": "api/Classes/InFormation/{ClassId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ClassId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.ClassroomesController",
+    "Method": "GetAllRoomes",
+    "RelativePath": "api/Classroomes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.ClassroomesController",
+    "Method": "CreateRoom",
+    "RelativePath": "api/Classroomes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SchoolSystem.Application.DTOs.ClassroomDtos.ClassroomDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.ClassroomesController",
+    "Method": "GetRoomBYId",
+    "RelativePath": "api/Classroomes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.ClassroomesController",
+    "Method": "UpdateRoom",
+    "RelativePath": "api/Classroomes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SchoolSystem.Application.DTOs.ClassroomDtos.ClassroomDto",
         "IsRequired": true
       }
     ],
@@ -147,6 +278,22 @@
         "Name": "studentDTo",
         "Type": "SchoolSystem.Application.DTOs.StudentsDTOs.StudentDTo",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.StudentsController",
+    "Method": "GetStudentAttendance",
+    "RelativePath": "api/Students/attendance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "studentName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -303,22 +450,6 @@
     "Parameters": [
       {
         "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SchoolSystemApi.Controllers.ClassesController",
-    "Method": "GetClassInformation",
-    "RelativePath": "InFormation/{ClassId}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "ClassId",
         "Type": "System.Int32",
         "IsRequired": true
       }

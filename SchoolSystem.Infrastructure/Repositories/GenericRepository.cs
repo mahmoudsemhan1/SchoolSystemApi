@@ -45,6 +45,5 @@ namespace SchoolSystem.Infrastructure.Repositories
             _dbSet.Update(entity);
         }
 
-      
     }
 }

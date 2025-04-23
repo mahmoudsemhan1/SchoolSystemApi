@@ -14,11 +14,12 @@ namespace SchoolSystemApi.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-
-        public StudentsController(IUnitOfWork unitOfWork, IMapper mapper)
+        private readonly IStudentService _studentService;
+        public StudentsController(IUnitOfWork unitOfWork, IMapper mapper, IStudentService studentService)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
+            _studentService = studentService;
         }
         [HttpGet]
         public async Task<IActionResult> GetStudents()
@@ -36,8 +37,26 @@ namespace SchoolSystemApi.Controllers
 
             return Ok(Student);
         }
-       // Add Student
-      [HttpPost]
+        /// <summary>
+        /// Endpoint get student with the attendances of him 
+        /// </summary>
+        /// <param name="studentName"></param>
+        /// <returns></returns>
+        [HttpGet("attendance")]
+        public async Task<IActionResult> GetStudentAttendance([FromQuery] string studentName)
+        {
+            if (string.IsNullOrWhiteSpace(studentName))
+                return BadRequest("Student name is required.");
+
+            var studentAttendance = await _studentService.GetStudentAttendanceInfoAsync(studentName);
+
+            if (studentAttendance == null)
+                return NotFound("Student not found.");
+
+            return Ok(studentAttendance);
+        }
+        // Add Student
+        [HttpPost]
         public async Task<IActionResult> Create([FromForm] StudentDTo dto)
         {
             if (!ModelState.IsValid)

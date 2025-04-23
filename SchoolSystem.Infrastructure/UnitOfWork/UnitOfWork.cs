@@ -20,6 +20,9 @@ namespace SchoolSystem.Infrastructure.UnitOfWork
         private IGenericRepository<Teacher>? _teachers;
         private IGenericRepository<Subject>? _subjects;
         private IGenericRepository<Class>? _classes;
+        private IGenericRepository<Classroom>? _classRoom;
+        private IGenericRepository<Attendance>? _attendance;
+
 
 
         private ITeacherRepository? _TeacherRepo;
@@ -28,12 +31,15 @@ namespace SchoolSystem.Infrastructure.UnitOfWork
         public IGenericRepository<Student> Students => _students ??= new GenericRepository<Student>(_context);
         public IGenericRepository<Teacher> Teachers => _teachers ??= new GenericRepository<Teacher>(_context);
         public IGenericRepository<Subject> Subjects => _subjects ??= new GenericRepository<Subject>(_context);
-
         public IGenericRepository<Class> Classes => _classes ??= new GenericRepository<Class>(_context);
+        public IGenericRepository<Classroom> ClassRoomes => _classRoom ??= new GenericRepository<Classroom>(_context);
+        public IGenericRepository<Attendance> Attendances => _attendance ??= new GenericRepository<Attendance>(_context);
+
+
 
         public ITeacherRepository TeacherRepository => _TeacherRepo ??= new TeacherRepository(_context,_mapper);
+        public IClassRepository classRepository    =>  _classRepo   ??= new ClassRepository(_context,_mapper);
 
-        public IClassRepository classRepository    =>  _classRepo   ??= new ClassRepository(_context,_mapper); 
 
         public async Task<int> CompleteAsync()
         {

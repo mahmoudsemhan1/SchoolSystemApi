@@ -74,3 +74,4 @@ C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.pdb
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.genruntimeconfig.cache
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\ref\SchoolSystem.Infrastructure.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.sourcelink.json
