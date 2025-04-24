@@ -59,18 +59,18 @@ namespace SchoolSystemApi.Controllers
             //
             return Ok(subject);
         }
-        //[HttpDelete]
-        //public async Task<IActionResult> DeleteSubejct(int id)
-        //{
-        //    var subject = _unitOfWork.Subjects.GetByIdAsync(id);
+        [HttpDelete]
+        public async Task<IActionResult> DeleteSubejct(int id)
+        {
+            var subject = await _unitOfWork.Subjects.GetByIdAsync(id);
 
-        //    if (subject == null) return NotFound($"subject with ID {id} not found.");
+            if (subject == null) return NotFound($"subject with ID {id} not found.");
 
-        //    _unitOfWork.Subjects.Delete(subject);
-        //    await _unitOfWork.CompleteAsync();
+            _unitOfWork.Subjects.Delete(subject);
+            await _unitOfWork.CompleteAsync();
 
-        //    return NoContent();
-        //}
+            return NoContent();
+        }
 
 
     }

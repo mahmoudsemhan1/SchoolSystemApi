@@ -91,7 +91,7 @@ public partial class SchoolSystemDbContext : DbContext
 
         modelBuilder.Entity<Grade>(entity =>
         {
-            entity.HasKey(e => e.GradeId).HasName("PK__Grades__54F87A570F8CF0B9");
+            entity.HasKey(e => e.Id).HasName("PK__Grades__54F87A570F8CF0B9");
 
             entity.Property(e => e.grade)
                 .HasColumnType("decimal(5, 2)")

@@ -8,7 +8,7 @@ using SchoolSystem.Application.Interfaces;
 
 namespace SchoolSystem.Application.Services
 {
-    public class TeacherService
+    public class TeacherService:ITeacherServices
     {
         private readonly IUnitOfWork _unitOfWork;
 

@@ -139,11 +139,11 @@ namespace SchoolSystem.Infrastructure.Migrations
 
             modelBuilder.Entity("SchoolSystem.Infrastructure.Models.Grade", b =>
                 {
-                    b.Property<int>("GradeId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("GradeId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int?>("StudentId")
                         .HasColumnType("int");
@@ -155,7 +155,7 @@ namespace SchoolSystem.Infrastructure.Migrations
                         .HasColumnType("decimal(5, 2)")
                         .HasColumnName("Grade");
 
-                    b.HasKey("GradeId")
+                    b.HasKey("Id")
                         .HasName("PK__Grades__54F87A570F8CF0B9");
 
                     b.HasIndex("StudentId");

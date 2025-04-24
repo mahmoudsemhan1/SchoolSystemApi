@@ -22,11 +22,13 @@ namespace SchoolSystem.Infrastructure.UnitOfWork
         private IGenericRepository<Class>? _classes;
         private IGenericRepository<Classroom>? _classRoom;
         private IGenericRepository<Attendance>? _attendance;
+        private IGenericRepository<Grade>? _grade;
 
 
 
         private ITeacherRepository? _TeacherRepo;
         private IClassRepository? _classRepo;
+        private IGradeRepository? _GradeRepo;
 
         public IGenericRepository<Student> Students => _students ??= new GenericRepository<Student>(_context);
         public IGenericRepository<Teacher> Teachers => _teachers ??= new GenericRepository<Teacher>(_context);
@@ -34,11 +36,16 @@ namespace SchoolSystem.Infrastructure.UnitOfWork
         public IGenericRepository<Class> Classes => _classes ??= new GenericRepository<Class>(_context);
         public IGenericRepository<Classroom> ClassRoomes => _classRoom ??= new GenericRepository<Classroom>(_context);
         public IGenericRepository<Attendance> Attendances => _attendance ??= new GenericRepository<Attendance>(_context);
+      
 
 
 
         public ITeacherRepository TeacherRepository => _TeacherRepo ??= new TeacherRepository(_context,_mapper);
         public IClassRepository classRepository    =>  _classRepo   ??= new ClassRepository(_context,_mapper);
+
+        //public IGradeRepository GradesReopsitory => _GradeRepo ??= new GradeRepository(_context);
+
+        public IGradeRepository Grades => _GradeRepo ??= new GradeRepository(_context);
 
 
         public async Task<int> CompleteAsync()
@@ -51,6 +58,6 @@ namespace SchoolSystem.Infrastructure.UnitOfWork
             _context.Dispose();
         }
 
-
+        
     }
 }

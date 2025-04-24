@@ -2,6 +2,7 @@
 using SchoolSystem.Application.DTOs.AttendanceDTOs;
 using SchoolSystem.Application.DTOs.ClassesDtos;
 using SchoolSystem.Application.DTOs.ClassroomDtos;
+using SchoolSystem.Application.DTOs.GradesDTOs;
 using SchoolSystem.Application.DTOs.StudentsDTOs;
 using SchoolSystem.Application.DTOs.SubjectsDTOs;
 using SchoolSystem.Application.DTOs.TeachersDTOs;
@@ -16,7 +17,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SchoolSystem.Application.DTOs
 {
-    public class MappingProfile: Profile
+    public class MappingProfile : Profile
     {
         public MappingProfile()
         {
@@ -33,6 +34,12 @@ namespace SchoolSystem.Application.DTOs
             CreateMap<Teacher, TeacherDto>();
             CreateMap<TeacherDto, Teacher>()
                 .ForMember(dest => dest.TeacherId, opt => opt.Ignore()); // علشان ما نغيّرش الـ ID
+            CreateMap<Teacher, TeacherDetailsDto>()
+                 .ForMember(dest => dest.TeacherName, opt => opt.MapFrom(src => src.Name))
+                 .ForMember(dest => dest.Subjects, opt => opt.MapFrom(src =>
+                     src.TeacherSubjects.Select(ts => ts.Subject.SubjectName).ToList()))
+                 .ForMember(dest => dest.Classes, opt => opt.MapFrom(src =>
+                     src.TeacherClasses.Select(tc => tc.Class.ClassName).ToList()));
 
             // Subject Mapp
             CreateMap<Subject, SubjectDto>();
@@ -56,7 +63,14 @@ namespace SchoolSystem.Application.DTOs
             //for Attendance
             CreateMap<Attendance, AttendanceDto>().ReverseMap();
             CreateMap<Attendance, AttendDtoForStudentInfo>();
-            //
+            //for Grade 
+            CreateMap<Grade, CreateGradeDto>().ReverseMap();
+             CreateMap<Grade, GradeDetailDto>()
+            .ForMember(dest => dest.StudentName, opt => opt.MapFrom(src => src.Student.Name))
+            .ForMember(dest => dest.SubjectName, opt => opt.MapFrom(src => src.Subject.SubjectName))
+            .ForMember(dest => dest.Grade, opt => opt.MapFrom(src => src.grade));
+
+           
         }
     }
 }

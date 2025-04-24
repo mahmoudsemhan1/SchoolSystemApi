@@ -7,12 +7,14 @@ namespace SchoolSystem.Application.Interfaces
     {
         IGenericRepository<Student> Students { get; }
         IGenericRepository<Teacher> Teachers { get; }
-        ITeacherRepository TeacherRepository { get; }
-        IClassRepository classRepository { get; }
         IGenericRepository<Subject> Subjects { get; }
         IGenericRepository<Class> Classes { get; }
         IGenericRepository<Classroom> ClassRoomes { get; }
         IGenericRepository<Attendance> Attendances { get; }
+
+        ITeacherRepository TeacherRepository { get; }
+        IClassRepository classRepository { get; }
+        IGradeRepository Grades { get; }
 
         Task<int> CompleteAsync();
     }

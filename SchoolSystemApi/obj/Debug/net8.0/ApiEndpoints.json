@@ -37,6 +37,43 @@
   },
   {
     "ContainingType": "SchoolSystemApi.Controllers.AttendancesController",
+    "Method": "UpdateAttendance",
+    "RelativePath": "api/Attendances",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "SchoolSystem.Application.DTOs.AttendanceDTOs.AttendanceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.AttendancesController",
+    "Method": "Delete",
+    "RelativePath": "api/Attendances",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.AttendancesController",
     "Method": "GetAttendByID",
     "RelativePath": "api/Attendances/{id}",
     "HttpMethod": "GET",
@@ -94,6 +131,22 @@
         "Name": "dto",
         "Type": "SchoolSystem.Application.DTOs.ClassesDtos.ClassesDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.ClassesController",
+    "Method": "Delete",
+    "RelativePath": "api/Classes",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -158,6 +211,22 @@
   },
   {
     "ContainingType": "SchoolSystemApi.Controllers.ClassroomesController",
+    "Method": "DeleteRoom",
+    "RelativePath": "api/Classroomes",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.ClassroomesController",
     "Method": "GetRoomBYId",
     "RelativePath": "api/Classroomes/{id}",
     "HttpMethod": "GET",
@@ -194,6 +263,101 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SchoolSystemApi.Controllers.GradesController",
+    "Method": "GetAllGrades",
+    "RelativePath": "api/Grades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.GradesController",
+    "Method": "Create",
+    "RelativePath": "api/Grades",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SchoolSystem.Application.DTOs.GradesDTOs.CreateGradeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.GradesController",
+    "Method": "UpdateGrade",
+    "RelativePath": "api/Grades",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "dto",
+        "Type": "SchoolSystem.Application.DTOs.GradesDTOs.CreateGradeDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.GradesController",
+    "Method": "Delete",
+    "RelativePath": "api/Grades",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.GradesController",
+    "Method": "GetGrade",
+    "RelativePath": "api/Grades/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.GradesController",
+    "Method": "GetGrade",
+    "RelativePath": "api/Grades/Student/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SchoolSystemApi.Controllers.StudentsController",
     "Method": "GetStudents",
     "RelativePath": "api/Students",
@@ -224,6 +388,11 @@
       {
         "Name": "ClassId",
         "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Class.ClassName",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -341,6 +510,22 @@
         "Name": "dto",
         "Type": "SchoolSystem.Application.DTOs.SubjectsDTOs.SubjectDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.SubjectsController",
+    "Method": "DeleteSubejct",
+    "RelativePath": "api/Subjects",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

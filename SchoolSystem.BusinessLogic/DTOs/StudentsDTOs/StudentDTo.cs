@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SchoolSystem.Application.DTOs.ClassesDtos;
+using SchoolSystem.Application.DTOs.GradesDTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,5 +15,11 @@ namespace SchoolSystem.Application.DTOs.StudentsDTOs
         public DateOnly? DateOfBirth { get; set; }
 
         public int? ClassId { get; set; }
+        public ClassesDto? Class { get; set; }
+
+
+
+
+
     }
 }

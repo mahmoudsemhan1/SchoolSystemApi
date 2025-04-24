@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using SchoolSystem.Application.DTOs.ClassroomDtos;
 using SchoolSystem.Application.Interfaces;
 using SchoolSystem.Infrastructure.Models;
+using System.Threading.Tasks;
 
 namespace SchoolSystemApi.Controllers
 {
@@ -59,18 +60,20 @@ namespace SchoolSystemApi.Controllers
             return Ok(dto);
         }
 
-        //[HttpDelete] 
-        //public IActionResult DeleteRoom(int id)
-        //{
-        //    var room = _unitOfWork.ClassRoomes.GetByIdAsync(id);
-        //    if (room == null)
-        //        return NotFound();
+        [HttpDelete]
+        public async Task<IActionResult> DeleteRoom(int id)
+        {
+            var room = await _unitOfWork.ClassRoomes.GetByIdAsync(id);
+            if (room == null)
+                return NotFound();
 
-        //    _unitOfWork.ClassRoomes.Delete(room);
-        //     _unitOfWork.CompleteAsync();
+            _unitOfWork.ClassRoomes.Delete(room);
+            await _unitOfWork.CompleteAsync();
+
+            return NoContent();
 
 
-        //}
+        }
 
     }
 }

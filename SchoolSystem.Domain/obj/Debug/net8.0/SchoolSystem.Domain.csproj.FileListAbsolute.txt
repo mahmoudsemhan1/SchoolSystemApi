@@ -42,3 +42,4 @@ C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Deb
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\refint\SchoolSystem.Domain.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.pdb
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\ref\SchoolSystem.Domain.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Domain\obj\Debug\net8.0\SchoolSystem.Domain.sourcelink.json

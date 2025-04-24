@@ -14,13 +14,13 @@ namespace SchoolSystemApi.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private readonly ClassServices _classServices;
+        private readonly IClassServices _IclassServices;
 
-        public ClassesController(IUnitOfWork unitOfWork, IMapper mapper, ClassServices classServices)
+        public ClassesController(IUnitOfWork unitOfWork, IMapper mapper, IClassServices IclassServices)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-            _classServices = classServices;
+            _IclassServices = IclassServices;
         }
 
         [HttpGet]
@@ -37,9 +37,9 @@ namespace SchoolSystemApi.Controllers
         [HttpGet("InFormation/{ClassId}")]
         public  async Task<IActionResult> GetClassInformation(int ClassId)
         {
-            var ClassInfo= await _classServices.GetClassDetails(ClassId);
+            var ClassInfo= await _IclassServices.GetClassDetails(ClassId);
              if(ClassInfo == null) 
-                return NotFound(_classServices.GetClassDetails(ClassId));
+                return NotFound(_IclassServices.GetClassDetails(ClassId));
 
             return Ok(ClassInfo);
         }
@@ -86,6 +86,20 @@ namespace SchoolSystemApi.Controllers
             await _unitOfWork.CompleteAsync();
             return Ok();
         }
-        
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var existClass = await _unitOfWork.Classes.GetByIdAsync(id);
+
+            if (existClass == null)
+                return NotFound("Invalid ID , please Try anthor one ");
+
+            _unitOfWork.Classes.Delete(existClass);
+            await _unitOfWork.CompleteAsync();
+            return NoContent();
+
+        }
+
     }
 }

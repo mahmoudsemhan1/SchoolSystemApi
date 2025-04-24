@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Security.Principal;
 
 namespace SchoolSystem.Infrastructure.Models;
 
-public partial class Grade
+public partial class Grade 
 {
-    public int GradeId { get; set; }
+    public int Id { get; set; }
 
     public int? StudentId { get; set; }
 

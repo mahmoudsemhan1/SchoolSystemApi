@@ -30,16 +30,9 @@ namespace SchoolSystem.Infrastructure.Repositories
                  .FirstOrDefaultAsync(t => t.TeacherId == teacherId);
             if (teacher == null) return null;
 
-           
-            return new TeacherDetailsDto
-            {
-                TeacherName = teacher.Name,
-                Subjects = teacher.TeacherSubjects.Select(s => s.Subject.SubjectName).ToList(),
-                Classes = teacher.TeacherClasses.Select(tc => tc.Class.ClassName).ToList()
-            };
 
-
-
+            var teaherdto = _mapper.Map<TeacherDetailsDto>(teacher);
+            return teaherdto;
 
 
         }

@@ -14,14 +14,14 @@ namespace SchoolSystemApi.Controllers
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private readonly TeacherService _teacherService;
+        private readonly ITeacherServices _IteacherService;
 
 
-        public TeachersController(IUnitOfWork unitOfWork, IMapper mapper, TeacherService teacherService)
+        public TeachersController(IUnitOfWork unitOfWork, IMapper mapper, ITeacherServices iteacherService)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-            _teacherService = teacherService;
+            _IteacherService = iteacherService;
         }
 
         [HttpGet]
@@ -69,7 +69,7 @@ namespace SchoolSystemApi.Controllers
         {
             var teacher = await _unitOfWork.Teachers.GetByIdAsync(id);
 
-            if (teacher == null) return NotFound($"Student with ID {id} not found.");
+            if (teacher == null) return NotFound($"Student with ID {id} not found.");                   
 
             _unitOfWork.Teachers.Delete(teacher);
             await _unitOfWork.CompleteAsync();
@@ -82,7 +82,7 @@ namespace SchoolSystemApi.Controllers
         [HttpGet("TeacherDetails/{id}")]
         public async Task<IActionResult> GetTeacherDetails(int id)
         {
-            var result = await _teacherService.GetTeacherDetails(id);
+            var result = await _IteacherService.GetTeacherDetails(id);
             if (result == null)
                 return NotFound();
 

@@ -45,5 +45,34 @@ namespace SchoolSystemApi.Controllers
             return Ok(AttendanceDto);
             
         }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdateAttendance(int id, AttendanceDto dto)
+        {
+            var ExiteAttend = await _unitOfWork.Attendances.GetByIdAsync(id);
+            if (ExiteAttend == null)
+                return NotFound($"Attendance with ID {id} not found");
+
+             _mapper.Map(dto, ExiteAttend);
+            await _unitOfWork.CompleteAsync();
+
+            return Ok(dto);
+        
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var ExiteAttend = await _unitOfWork.Attendances.GetByIdAsync(id);
+            if (ExiteAttend == null)
+                return NotFound($"Attendance with ID {id} not found");
+
+             _unitOfWork.Attendances.Delete(ExiteAttend);
+             await _unitOfWork.CompleteAsync();
+
+            return NoContent();
+
+        }
+
     }
 }
