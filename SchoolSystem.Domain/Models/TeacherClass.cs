@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +11,10 @@ namespace SchoolSystem.Domain.Models
 {
     public class TeacherClass
     {
+  
+
         public int TeacherId { get; set; }
+
         public Teacher teacher { get; set; }
         public int ClassId { get; set; }
         public Class Class { get; set; }

@@ -547,6 +547,74 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SchoolSystemApi.Controllers.TeacherClassesController",
+    "Method": "GetAll",
+    "RelativePath": "api/TeacherClasses",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.TeacherClassesController",
+    "Method": "CreateTeacherforClass",
+    "RelativePath": "api/TeacherClasses",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SchoolSystem.Application.DTOs.TeacherClassesDTOs.T_C_ForCreate",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.TeacherClassesController",
+    "Method": "GetByIDs",
+    "RelativePath": "api/TeacherClasses/{teacherId}/{classId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teacherId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "classId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.TeacherClassesController",
+    "Method": "Delete",
+    "RelativePath": "api/TeacherClasses/{teacherId}/{classId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teacherId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "classId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SchoolSystemApi.Controllers.TeachersController",
     "Method": "GetTeachers",
     "RelativePath": "api/Teachers",

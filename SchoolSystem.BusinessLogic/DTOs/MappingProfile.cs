@@ -5,8 +5,10 @@ using SchoolSystem.Application.DTOs.ClassroomDtos;
 using SchoolSystem.Application.DTOs.GradesDTOs;
 using SchoolSystem.Application.DTOs.StudentsDTOs;
 using SchoolSystem.Application.DTOs.SubjectsDTOs;
+using SchoolSystem.Application.DTOs.TeacherClassesDTOs;
 using SchoolSystem.Application.DTOs.TeachersDTOs;
 using SchoolSystem.Application.DTOs.TimetableDtos;
+using SchoolSystem.Domain.Models;
 using SchoolSystem.Infrastructure.Models;
 using System;
 using System.Collections.Generic;
@@ -69,6 +71,11 @@ namespace SchoolSystem.Application.DTOs
             .ForMember(dest => dest.StudentName, opt => opt.MapFrom(src => src.Student.Name))
             .ForMember(dest => dest.SubjectName, opt => opt.MapFrom(src => src.Subject.SubjectName))
             .ForMember(dest => dest.Grade, opt => opt.MapFrom(src => src.grade));
+            //teacheClass
+            CreateMap<TeacherClass, T_C_Dto_GetAll>()
+                .ForMember(dest => dest.TeacherName, opt => opt.MapFrom(src=>src.teacher.Name))
+                .ForMember(dest => dest.ClassName, opt => opt.MapFrom(src=>src.Class.ClassName));
+            CreateMap<TeacherClass, T_C_ForCreate>().ReverseMap();
 
            
         }

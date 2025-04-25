@@ -61,23 +61,11 @@ namespace SchoolSystem.Infrastructure.Repositories
 
             return await query.FirstOrDefaultAsync();
         }
-        public async Task<T?> GetByIdAsync(object id, string? includeProperties = null)
+        public async Task<T?> GetByIdAsync(object id)
         {
-
-            // بناء الاستعلام الأساسي
-            IQueryable<T> query = _dbSet;
-
-            // إذا كان هناك خصائص مرتبطة للإضافة (Include)
-            if (!string.IsNullOrEmpty(includeProperties))
-            {
-                foreach (var property in includeProperties.Split(','))
-                {
-                    query = query.Include(property.Trim());
-                }
-            }
-
-            // العثور على الكائن باستخدام الـ ID
-            return await query.FirstOrDefaultAsync(e => EF.Property<object>(e, "Id") == id);
+           
+            return await _context.Set<T>().FindAsync(id);
+           
         }
 
         public async Task AddAsync(T entity)

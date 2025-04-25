@@ -12,5 +12,6 @@ namespace SchoolSystem.Application.Interfaces
     {
         Task<TeacherDetailsDto> GetTeacherDetailsAsync(int teacherId);
 
+
     }
 }

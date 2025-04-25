@@ -31,18 +31,16 @@ builder.Services.AddScoped<ITeacherServices,TeacherService>();
 //Classes
 builder.Services.AddScoped<IClassRepository, ClassRepository>();
 builder.Services.AddScoped<IClassServices,ClassServices>();
-//grade
+// TeacherClass
+builder.Services.AddScoped<ITeacherClassService, TeacherClassService>();
 
 
-
-// 
 builder.Services.AddControllers()
     .AddJsonOptions(x =>
-    {
-        x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
-        x.JsonSerializerOptions.WriteIndented = true;
-    });
-builder.Services.AddControllers();
+{
+    x.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
+    x.JsonSerializerOptions.WriteIndented = true;
+}); 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
