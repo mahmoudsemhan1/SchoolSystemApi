@@ -1,20 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SchoolSystem.Domain.Models;
 
 namespace SchoolSystem.Infrastructure.Models;
 
-public partial class SchoolSystemDbContext : DbContext
+public partial  class SchoolSystemDbContext : IdentityDbContext<ApplicationUser>
 {
-    public SchoolSystemDbContext()
-    {
-    }
+
 
     public SchoolSystemDbContext(DbContextOptions<SchoolSystemDbContext> options)
-        : base(options)
-    {
-    }
+         : base(options) { }
 
     public virtual DbSet<Attendance> Attendances { get; set; }
 
@@ -36,13 +33,15 @@ public partial class SchoolSystemDbContext : DbContext
     public virtual DbSet<TeacherClass> TeacherClasses { get; set; }
     public virtual DbSet<ClassSubjects> ClassSubjects { get; set; }
     public virtual DbSet<TeacherSubject> TeacherSubject { get; set; }
-
+ 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=DESKTOP-C4HF2SS;Database=SchoolSystemDB;User Id=sa;Password=P@ssw0rd;Trusted_Connection=True;TrustServerCertificate=True;");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
+        base.OnModelCreating(modelBuilder);
+
         modelBuilder.Entity<Attendance>(entity =>
         {
             entity.HasKey(e => e.AttendanceId).HasName("PK__Attendan__8B69261C989728B2");
@@ -109,9 +108,9 @@ public partial class SchoolSystemDbContext : DbContext
         modelBuilder.Entity<Student>(entity =>
         {
             entity.HasKey(e => e.StudentId).HasName("PK__Students__32C52B997632E226");
+            entity.Property(e => e.Name);
 
-            entity.Property(e => e.Name).HasMaxLength(100);
-
+    
             entity.HasOne(d => d.Class).WithMany(p => p.Students)
                 .HasForeignKey(d => d.ClassId)
                 .HasConstraintName("FK_Students_Classes");
@@ -126,10 +125,11 @@ public partial class SchoolSystemDbContext : DbContext
 
         modelBuilder.Entity<Teacher>(entity =>
         {
+            entity.Property(e => e.Name);
+
             entity.HasKey(e => e.TeacherId).HasName("PK__Teachers__EDF25964673B85A0");
 
-            entity.Property(e => e.Name).HasMaxLength(100);
-
+ 
            
         });
         modelBuilder.Entity<TeacherSubject>(entity =>

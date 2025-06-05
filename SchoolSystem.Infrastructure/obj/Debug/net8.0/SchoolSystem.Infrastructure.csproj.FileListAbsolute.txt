@@ -68,10 +68,10 @@ C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.AssemblyInfoInputs.cache
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.AssemblyInfo.cs
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.sourcelink.json
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSy.F1753FB0.Up2Date
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\refint\SchoolSystem.Infrastructure.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.pdb
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.genruntimeconfig.cache
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\ref\SchoolSystem.Infrastructure.dll
-C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystem.Infrastructure\obj\Debug\net8.0\SchoolSystem.Infrastructure.sourcelink.json

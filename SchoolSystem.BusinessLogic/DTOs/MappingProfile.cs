@@ -8,6 +8,7 @@ using SchoolSystem.Application.DTOs.SubjectsDTOs;
 using SchoolSystem.Application.DTOs.TeacherClassesDTOs;
 using SchoolSystem.Application.DTOs.TeachersDTOs;
 using SchoolSystem.Application.DTOs.TimetableDtos;
+using SchoolSystem.Application.DTOs.UsersDtos;
 using SchoolSystem.Domain.Models;
 using SchoolSystem.Infrastructure.Models;
 using System;
@@ -77,6 +78,7 @@ namespace SchoolSystem.Application.DTOs
                 .ForMember(dest => dest.ClassName, opt => opt.MapFrom(src=>src.Class.ClassName));
             CreateMap<TeacherClass, T_C_ForCreate>().ReverseMap();
 
+            
            
         }
     }

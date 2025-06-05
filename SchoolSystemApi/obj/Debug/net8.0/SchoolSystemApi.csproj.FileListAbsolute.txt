@@ -460,8 +460,8 @@ C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\
 C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\ref\SchoolSystemApi.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\SchoolSystemApi.staticwebassets.endpoints.json
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\appsettings.json
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\SchoolSystemApi.staticwebassets.endpoints.json
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\SchoolSystemApi.exe
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\SchoolSystemApi.deps.json
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\SchoolSystemApi.runtimeconfig.json
@@ -471,6 +471,10 @@ C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\n
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -486,6 +490,8 @@ C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\n
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
@@ -596,6 +602,7 @@ C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\n
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.csproj.CoreCompileInputs.cache
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.sourcelink.json
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\scopedcss\bundle\SchoolSystemApi.styles.css
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\staticwebassets.development.json
@@ -613,4 +620,3 @@ C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\n
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.pdb
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.genruntimeconfig.cache
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\ref\SchoolSystemApi.dll
-C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.sourcelink.json
