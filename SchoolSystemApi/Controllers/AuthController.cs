@@ -21,38 +21,16 @@ namespace SchoolSystemApi.Controllers
             _roleManager = roleManager;
             _tokenService = tokenService;
         }
-        [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterDto model)
-        {
-
-            var user = new ApplicationUser
-            {
-                UserName = model.UserName,
-                Email = model.Email,
-                FullName = model.FullName,
-                Gender = model.Gender
-            };
-
-            var result = await _userManager.CreateAsync(user, model.Password);
-            if (!result.Succeeded)
-                return BadRequest(result.Errors);
-            // Assign Role
-            if (!await _roleManager.RoleExistsAsync(model.Role))
-                return BadRequest("Invalid Role");
-            await _userManager.AddToRoleAsync(user, model.Role);
-
-            return Ok("User registered successfully!");
-
-        }
+       
 
         [HttpPost("Login")]
         public async Task<IActionResult> Login([FromBody] LoginDto model)
         {
-            ApplicationUser user = await  _userManager.FindByNameAsync(model.UserNameOrEmail);
+            ApplicationUser user = await _userManager.FindByNameAsync(model.UserNameOrEmail);
 
             if (user == null)
             {
-                user = await  _userManager.FindByEmailAsync(model.UserNameOrEmail);
+                user = await _userManager.FindByEmailAsync(model.UserNameOrEmail);
             }
 
             if (user == null)
@@ -63,10 +41,10 @@ namespace SchoolSystemApi.Controllers
             if (!isPasswordValid)
                 return Unauthorized("Invalid username or password.");
 
-            var token =await _tokenService.GenerateTokenAsync(user);
+            var token = await _tokenService.GenerateTokenAsync(user);
 
             return Ok(new { Token = token });
-        
+
+        }
     }
-}
 }

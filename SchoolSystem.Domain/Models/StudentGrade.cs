@@ -4,7 +4,7 @@ using System.Security.Principal;
 
 namespace SchoolSystem.Infrastructure.Models;
 
-public partial class Grade 
+public partial class StudentGrade
 {
     public int Id { get; set; }
 

@@ -459,6 +459,13 @@ C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\
 C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSy.0044ACC9.Up2Date
 C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\ref\SchoolSystemApi.dll
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.csproj.AssemblyReference.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.AssemblyInfoInputs.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.AssemblyInfo.cs
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.csproj.CoreCompileInputs.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.sourcelink.json
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\appsettings.json
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\SchoolSystemApi.staticwebassets.endpoints.json
@@ -595,14 +602,7 @@ C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\n
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\SchoolSystem.Application.pdb
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\SchoolSystem.Infrastructure.pdb
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\bin\Debug\net8.0\SchoolSystem.Domain.pdb
-C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.csproj.AssemblyReference.cache
-C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.AssemblyInfoInputs.cache
-C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.AssemblyInfo.cs
-C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.csproj.CoreCompileInputs.cache
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\SchoolSystemApi.sourcelink.json
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\scopedcss\bundle\SchoolSystemApi.styles.css
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Ma7moud\Desktop\new project\SchoolSystemApi\SchoolSystemApi\obj\Debug\net8.0\staticwebassets.development.json

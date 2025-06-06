@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace SchoolSystem.Infrastructure.Repositories
 {
-    public class GradeRepository : GenericRepository<Grade>, IGradeRepository
+    public class GradeRepository : GenericRepository<StudentGrade>, IGradeRepository
     {
         public GradeRepository(SchoolSystemDbContext context) : base(context)
         {

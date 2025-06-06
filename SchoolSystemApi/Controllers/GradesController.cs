@@ -80,7 +80,7 @@ namespace SchoolSystemApi.Controllers
             if (student == null || subject == null)
                 return BadRequest("Student or Subject not found.");
 
-            var Newgrad = _mapper.Map<Grade>(dto);
+            var Newgrad = _mapper.Map<StudentGrade>(dto);
 
             await _unitOfWork.Grades.AddAsync(Newgrad);
             await _unitOfWork.CompleteAsync();

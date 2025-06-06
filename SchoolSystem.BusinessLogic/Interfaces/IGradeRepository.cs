@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SchoolSystem.Application.Interfaces
 {
-    public interface IGradeRepository :IGenericRepository<Grade>
+    public interface IGradeRepository :IGenericRepository<StudentGrade>
     {
        
 

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SchoolSystem.Infrastructure.Models;
 
@@ -11,9 +12,11 @@ using SchoolSystem.Infrastructure.Models;
 namespace SchoolSystem.Infrastructure.Migrations
 {
     [DbContext(typeof(SchoolSystemDbContext))]
-    partial class SchoolSystemDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250606165618_Rename_Grade_To_StudentGrade_And_Add_SchoolGrade")]
+    partial class Rename_Grade_To_StudentGrade_And_Add_SchoolGrade
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -257,7 +260,7 @@ namespace SchoolSystem.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("SchoolGrades", (string)null);
+                    b.ToTable("SchoolGrades");
                 });
 
             modelBuilder.Entity("SchoolSystem.Domain.Models.TeacherClass", b =>
@@ -272,7 +275,7 @@ namespace SchoolSystem.Infrastructure.Migrations
 
                     b.HasIndex("ClassId");
 
-                    b.ToTable("TeacherClasses", (string)null);
+                    b.ToTable("TeacherClasses");
                 });
 
             modelBuilder.Entity("SchoolSystem.Domain.Models.TeacherSubject", b =>
@@ -341,7 +344,7 @@ namespace SchoolSystem.Infrastructure.Migrations
 
                     b.HasIndex("TeacherId");
 
-                    b.ToTable("Classes", (string)null);
+                    b.ToTable("Classes");
                 });
 
             modelBuilder.Entity("SchoolSystem.Infrastructure.Models.Classroom", b =>
@@ -362,7 +365,7 @@ namespace SchoolSystem.Infrastructure.Migrations
                     b.HasKey("ClassroomId")
                         .HasName("PK__Classroo__11618EAA897F6DAF");
 
-                    b.ToTable("Classrooms", (string)null);
+                    b.ToTable("Classrooms");
                 });
 
             modelBuilder.Entity("SchoolSystem.Infrastructure.Models.Student", b =>
@@ -397,7 +400,7 @@ namespace SchoolSystem.Infrastructure.Migrations
 
                     b.HasIndex("SchoolGradeId");
 
-                    b.ToTable("Students", (string)null);
+                    b.ToTable("Students");
                 });
 
             modelBuilder.Entity("SchoolSystem.Infrastructure.Models.StudentGrade", b =>
@@ -425,7 +428,7 @@ namespace SchoolSystem.Infrastructure.Migrations
 
                     b.HasIndex("SubjectId");
 
-                    b.ToTable("Grades", (string)null);
+                    b.ToTable("Grades");
                 });
 
             modelBuilder.Entity("SchoolSystem.Infrastructure.Models.Subject", b =>
@@ -443,7 +446,7 @@ namespace SchoolSystem.Infrastructure.Migrations
                     b.HasKey("SubjectId")
                         .HasName("PK__Subjects__AC1BA3A8BCF38FFE");
 
-                    b.ToTable("Subjects", (string)null);
+                    b.ToTable("Subjects");
                 });
 
             modelBuilder.Entity("SchoolSystem.Infrastructure.Models.Teacher", b =>
@@ -465,7 +468,7 @@ namespace SchoolSystem.Infrastructure.Migrations
 
                     b.HasIndex("ApplicationUserId");
 
-                    b.ToTable("Teachers", (string)null);
+                    b.ToTable("Teachers");
                 });
 
             modelBuilder.Entity("SchoolSystem.Infrastructure.Models.TimeSlot", b =>
@@ -485,7 +488,7 @@ namespace SchoolSystem.Infrastructure.Migrations
 
                     b.HasKey("TimeSlotId");
 
-                    b.ToTable("TimeSlots", (string)null);
+                    b.ToTable("TimeSlots");
                 });
 
             modelBuilder.Entity("SchoolSystem.Infrastructure.Models.Timetable", b =>

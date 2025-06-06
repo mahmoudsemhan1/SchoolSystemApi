@@ -28,6 +28,10 @@ namespace SchoolSystem.Application.DTOs
             CreateMap<Student, StudentDTo>().ReverseMap();
             CreateMap<StudentDTo, Student>()
                 .ForMember(dest => dest.StudentId, opt => opt.Ignore()); // علشان ما نغيّرش الـ ID
+
+            CreateMap<RegisterStudentDto, ApplicationUser>();
+            CreateMap<RegisterStudentDto, Student>()
+                .ForMember(dest => dest.ApplicationUserId, opt => opt.Ignore()); // add it manual after create user
             //for Attendance 
             CreateMap<Student, StudentDtoForAttendance>()
                  .ForMember(dest => dest.AttendDtoForStudentInfo,
@@ -67,8 +71,8 @@ namespace SchoolSystem.Application.DTOs
             CreateMap<Attendance, AttendanceDto>().ReverseMap();
             CreateMap<Attendance, AttendDtoForStudentInfo>();
             //for Grade 
-            CreateMap<Grade, CreateGradeDto>().ReverseMap();
-             CreateMap<Grade, GradeDetailDto>()
+            CreateMap<StudentGrade, CreateGradeDto>().ReverseMap();
+             CreateMap<StudentGrade, GradeDetailDto>()
             .ForMember(dest => dest.StudentName, opt => opt.MapFrom(src => src.Student.Name))
             .ForMember(dest => dest.SubjectName, opt => opt.MapFrom(src => src.Subject.SubjectName))
             .ForMember(dest => dest.Grade, opt => opt.MapFrom(src => src.grade));

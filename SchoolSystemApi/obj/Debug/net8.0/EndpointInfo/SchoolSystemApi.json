@@ -142,37 +142,6 @@
         }
       }
     },
-    "/api/Auth/register": {
-      "post": {
-        "tags": [
-          "Auth"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/RegisterDto"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Auth/Login": {
       "post": {
         "tags": [
@@ -784,6 +753,37 @@
         }
       }
     },
+    "/api/Students/register": {
+      "post": {
+        "tags": [
+          "Students"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterStudentDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterStudentDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RegisterStudentDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Subjects": {
       "get": {
         "tags": [
@@ -1235,18 +1235,10 @@
         },
         "additionalProperties": false
       },
-      "RegisterDto": {
+      "RegisterStudentDto": {
         "type": "object",
         "properties": {
           "userName": {
-            "type": "string",
-            "nullable": true
-          },
-          "fullName": {
-            "type": "string",
-            "nullable": true
-          },
-          "gender": {
             "type": "string",
             "nullable": true
           },
@@ -1254,13 +1246,25 @@
             "type": "string",
             "nullable": true
           },
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          },
           "password": {
             "type": "string",
             "nullable": true
           },
-          "role": {
+          "gender": {
             "type": "string",
             "nullable": true
+          },
+          "gradeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "classId": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

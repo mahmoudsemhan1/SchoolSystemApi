@@ -19,7 +19,7 @@ public partial  class SchoolSystemDbContext : IdentityDbContext<ApplicationUser>
 
     public virtual DbSet<Classroom> Classrooms { get; set; }
 
-    public virtual DbSet<Grade> Grades { get; set; }
+    public virtual DbSet<StudentGrade> Grades { get; set; }
 
     public virtual DbSet<Student> Students { get; set; }
 
@@ -33,7 +33,9 @@ public partial  class SchoolSystemDbContext : IdentityDbContext<ApplicationUser>
     public virtual DbSet<TeacherClass> TeacherClasses { get; set; }
     public virtual DbSet<ClassSubjects> ClassSubjects { get; set; }
     public virtual DbSet<TeacherSubject> TeacherSubject { get; set; }
- 
+    public virtual DbSet<SchoolGrade>  SchoolGrades  { get; set; }
+
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseSqlServer("Server=DESKTOP-C4HF2SS;Database=SchoolSystemDB;User Id=sa;Password=P@ssw0rd;Trusted_Connection=True;TrustServerCertificate=True;");
@@ -88,7 +90,7 @@ public partial  class SchoolSystemDbContext : IdentityDbContext<ApplicationUser>
             entity.Property(e => e.RoomNumber).HasMaxLength(20);
         });
 
-        modelBuilder.Entity<Grade>(entity =>
+        modelBuilder.Entity<StudentGrade>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Grades__54F87A570F8CF0B9");
 

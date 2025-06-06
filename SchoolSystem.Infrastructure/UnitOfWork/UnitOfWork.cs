@@ -23,7 +23,7 @@ namespace SchoolSystem.Infrastructure.UnitOfWork
         private IGenericRepository<Class>? _classes;
         private IGenericRepository<Classroom>? _classRoom;
         private IGenericRepository<Attendance>? _attendance;
-        private IGenericRepository<Grade>? _grade;
+        private IGenericRepository<StudentGrade>? _grade;
         private IGenericRepository<TeacherClass>? _teacherClasses;
 
 

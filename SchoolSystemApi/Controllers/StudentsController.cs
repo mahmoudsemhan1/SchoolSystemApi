@@ -5,6 +5,9 @@ using SchoolSystem.Application.Interfaces;
 using SchoolSystem.Application.DTOs;
 using SchoolSystem.Infrastructure.Models;
 using SchoolSystem.Application.DTOs.StudentsDTOs;
+using Microsoft.AspNetCore.Identity;
+using SchoolSystem.Domain.Models;
+using SchoolSystem.Domain.Common;
 
 namespace SchoolSystemApi.Controllers
 {
@@ -15,11 +18,16 @@ namespace SchoolSystemApi.Controllers
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
         private readonly IStudentService _studentService;
-        public StudentsController(IUnitOfWork unitOfWork, IMapper mapper, IStudentService studentService)
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly RoleManager<IdentityRole>  _roleManager ;
+
+        public StudentsController(IUnitOfWork unitOfWork, IMapper mapper, IStudentService studentService, UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
             _studentService = studentService;
+            _userManager = userManager;
+            _roleManager = roleManager;
         }
         [HttpGet]
         public async Task<IActionResult> GetStudents()
@@ -96,6 +104,30 @@ namespace SchoolSystemApi.Controllers
 
 
             return NoContent();
+        }
+
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterStudentDto model)
+        {
+
+            var user = _mapper.Map<ApplicationUser>(model);
+     
+            var result = await _userManager.CreateAsync(user, model.Password);
+            if (!result.Succeeded)
+                return BadRequest(result.Errors);
+            // Assign Role
+            if (!await _roleManager.RoleExistsAsync(AppRoles.Student))
+                await _roleManager.CreateAsync(new IdentityRole(AppRoles.Student));
+
+            await _userManager.AddToRoleAsync(user, AppRoles.Student);
+            // 3. تحويل DTO إلى Student
+            var student = _mapper.Map<Student>(model);
+            student.ApplicationUserId = user.Id;
+
+            await _unitOfWork.CompleteAsync();
+
+            return Ok("User registered successfully!");
+
         }
 
     }
