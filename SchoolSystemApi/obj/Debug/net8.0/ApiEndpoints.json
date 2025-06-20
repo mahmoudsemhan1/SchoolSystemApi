@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "SchoolSystemApi.Controllers.AdminController",
+    "Method": "AssignRole",
+    "RelativePath": "api/Admin/assign-role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SchoolSystem.Application.DTOs.UsersDtos.AssignRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.AdminController",
+    "Method": "GetUsersWithoutRole",
+    "RelativePath": "api/Admin/users-without-role",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SchoolSystemApi.Controllers.AttendancesController",
     "Method": "GetAllAttendances",
     "RelativePath": "api/Attendances",
@@ -99,6 +125,22 @@
       {
         "Name": "model",
         "Type": "SchoolSystem.Application.DTOs.UsersDtos.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SchoolSystem.Application.DTOs.UsersDtos.RegisterDto",
         "IsRequired": true
       }
     ],
@@ -313,7 +355,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
       },
@@ -334,7 +376,7 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Id",
+        "Name": "id",
         "Type": "System.Int32",
         "IsRequired": false
       }
@@ -355,6 +397,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.GradesController",
+    "Method": "GetMyGrades",
+    "RelativePath": "api/Grades/MyGrades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -485,18 +537,12 @@
   },
   {
     "ContainingType": "SchoolSystemApi.Controllers.StudentsController",
-    "Method": "Register",
-    "RelativePath": "api/Students/register",
-    "HttpMethod": "POST",
+    "Method": "GetMyProfile",
+    "RelativePath": "api/Students/MyProfile",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "SchoolSystem.Application.DTOs.StudentsDTOs.RegisterStudentDto",
-        "IsRequired": true
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -511,16 +557,32 @@
   },
   {
     "ContainingType": "SchoolSystemApi.Controllers.SubjectsController",
-    "Method": "CreatSubject",
+    "Method": "CreateSubject",
     "RelativePath": "api/Subjects",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "SubjectName",
-        "Type": "System.String",
-        "IsRequired": false
+        "Name": "dto",
+        "Type": "SchoolSystem.Application.DTOs.SubjectsDTOs.SubjectDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.SubjectsController",
+    "Method": "GetSubjectById",
+    "RelativePath": "api/Subjects/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -528,7 +590,7 @@
   {
     "ContainingType": "SchoolSystemApi.Controllers.SubjectsController",
     "Method": "UpdateSubject",
-    "RelativePath": "api/Subjects",
+    "RelativePath": "api/Subjects/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -536,7 +598,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "dto",
@@ -548,25 +610,9 @@
   },
   {
     "ContainingType": "SchoolSystemApi.Controllers.SubjectsController",
-    "Method": "DeleteSubejct",
-    "RelativePath": "api/Subjects",
-    "HttpMethod": "DELETE",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SchoolSystemApi.Controllers.SubjectsController",
-    "Method": "GetSubjectById",
+    "Method": "DeleteSubject",
     "RelativePath": "api/Subjects/{id}",
-    "HttpMethod": "GET",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
@@ -590,7 +636,7 @@
   },
   {
     "ContainingType": "SchoolSystemApi.Controllers.TeacherClassesController",
-    "Method": "CreateTeacherforClass",
+    "Method": "CreateTeacherForClass",
     "RelativePath": "api/TeacherClasses",
     "HttpMethod": "POST",
     "IsController": true,
@@ -647,6 +693,38 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SchoolSystemApi.Controllers.TeacherClassesController",
+    "Method": "GetTeachersByClassId",
+    "RelativePath": "api/TeacherClasses/Class/{classId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "classId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SchoolSystemApi.Controllers.TeacherClassesController",
+    "Method": "GetClassesByTeacherId",
+    "RelativePath": "api/TeacherClasses/Teacher/{teacherId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "teacherId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SchoolSystemApi.Controllers.TeachersController",
     "Method": "GetTeachers",
     "RelativePath": "api/Teachers",
@@ -674,20 +752,15 @@
   },
   {
     "ContainingType": "SchoolSystemApi.Controllers.TeachersController",
-    "Method": "Update",
-    "RelativePath": "api/Teachers",
-    "HttpMethod": "PUT",
+    "Method": "GetTeacher",
+    "RelativePath": "api/Teachers/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "dto",
-        "Type": "SchoolSystem.Application.DTOs.TeachersDTOs.TeacherDto",
         "IsRequired": true
       }
     ],
@@ -695,15 +768,20 @@
   },
   {
     "ContainingType": "SchoolSystemApi.Controllers.TeachersController",
-    "Method": "Delete",
-    "RelativePath": "api/Teachers",
-    "HttpMethod": "DELETE",
+    "Method": "Update",
+    "RelativePath": "api/Teachers/{id}",
+    "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],
@@ -711,9 +789,9 @@
   },
   {
     "ContainingType": "SchoolSystemApi.Controllers.TeachersController",
-    "Method": "GetTeacher",
+    "Method": "Delete",
     "RelativePath": "api/Teachers/{id}",
-    "HttpMethod": "GET",
+    "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SchoolSystem.Application.DTOs.ClassroomDtos;
@@ -22,19 +23,22 @@ namespace SchoolSystemApi.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> GetAllRoomes()
         {
             var Roomes = await _unitOfWork.ClassRoomes.GetAllAsync();
             return Ok(Roomes);
         }
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> GetRoomBYId(int id)
         {
             var Room = await _unitOfWork.ClassRoomes.GetByIdAsync(id);
             return Ok(Room);
         }
 
-        [HttpPost] 
+        [HttpPost]
+        [Authorize(Roles = "Admin")]
         public  async Task<IActionResult> CreateRoom( ClassroomDto dto)
         {
             if (!ModelState.IsValid)
@@ -48,6 +52,7 @@ namespace SchoolSystemApi.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateRoom(int id,ClassroomDto dto)
         {
             var existRoom =await _unitOfWork.ClassRoomes.GetByIdAsync(id);
@@ -61,6 +66,7 @@ namespace SchoolSystemApi.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteRoom(int id)
         {
             var room = await _unitOfWork.ClassRoomes.GetByIdAsync(id);

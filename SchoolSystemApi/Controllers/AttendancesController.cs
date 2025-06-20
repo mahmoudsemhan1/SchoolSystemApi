@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SchoolSystem.Application.DTOs.AttendanceDTOs;
@@ -9,6 +10,7 @@ namespace SchoolSystemApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin,Teacher")]
     public class AttendancesController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -20,12 +22,14 @@ namespace SchoolSystemApi.Controllers
             _mapper = mapper;
         }
         [HttpGet]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> GetAllAttendances()
         {
             var Attendances =await _unitOfWork.Attendances.GetAllAsync();
             return Ok(Attendances);
         }
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> GetAttendByID(int id)
         {
             var studentAttend = await _unitOfWork.Attendances.GetByIdAsync(id);
@@ -33,6 +37,7 @@ namespace SchoolSystemApi.Controllers
         }
       
         [HttpPost]
+        [Authorize(Roles = "Teacher")]
         public async Task<IActionResult> CreateAttendace([FromForm] AttendanceDto dto)
         {
             if (dto==null)
@@ -47,6 +52,7 @@ namespace SchoolSystemApi.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Teacher")]
         public async Task<IActionResult> UpdateAttendance(int id, AttendanceDto dto)
         {
             var ExiteAttend = await _unitOfWork.Attendances.GetByIdAsync(id);
@@ -61,6 +67,7 @@ namespace SchoolSystemApi.Controllers
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             var ExiteAttend = await _unitOfWork.Attendances.GetByIdAsync(id);

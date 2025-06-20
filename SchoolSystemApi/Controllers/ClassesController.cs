@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SchoolSystem.Application.DTOs.ClassesDtos;
@@ -8,6 +9,7 @@ using SchoolSystem.Infrastructure.Models;
 
 namespace SchoolSystemApi.Controllers
 {
+    [Authorize(Roles = "Admin,Teacher")]
     [Route("api/[controller]")]
     [ApiController]
     public class ClassesController : ControllerBase
@@ -24,6 +26,7 @@ namespace SchoolSystemApi.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> GetAllClasses()
         {
             var Classes=await _unitOfWork.Classes.GetAllAsync();
@@ -35,6 +38,7 @@ namespace SchoolSystemApi.Controllers
         /// <param name="ClassId"></param>
         /// <returns></returns>
         [HttpGet("InFormation/{ClassId}")]
+        [Authorize(Roles = "Admin,Teacher")]
         public  async Task<IActionResult> GetClassInformation(int ClassId)
         {
             var ClassInfo= await _IclassServices.GetClassDetails(ClassId);
@@ -49,6 +53,7 @@ namespace SchoolSystemApi.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> GetClassById(int id)
         {
             var class_=await _unitOfWork.Classes.GetByIdAsync(id);
@@ -59,6 +64,8 @@ namespace SchoolSystemApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> CreatClass(ClassesDto dto)
         {
             if(dto == null)
@@ -72,22 +79,26 @@ namespace SchoolSystemApi.Controllers
            return Ok();
         }
         [HttpPut]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> UpdateClass(int id , ClassesDto dto)
         {
-            var existClass = _unitOfWork.Classes.GetByIdAsync(id);
+            var existClass = await _unitOfWork.Classes.GetByIdAsync(id);
 
             if(existClass == null)
                 return NotFound("Invalid ID , please Try anthor one ");
 
             // Map the updated values from the DTO into the existing entity object
             // This updates only matching properties without creating a new instance
-            await _mapper.Map(dto,existClass);
+              _mapper.Map(dto,existClass);
 
             await _unitOfWork.CompleteAsync();
             return Ok();
         }
 
         [HttpDelete]
+        [Authorize(Roles = "Admin")]
+
         public async Task<IActionResult> Delete(int id)
         {
             var existClass = await _unitOfWork.Classes.GetByIdAsync(id);

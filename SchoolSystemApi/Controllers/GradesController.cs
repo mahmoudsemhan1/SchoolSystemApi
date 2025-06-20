@@ -1,68 +1,57 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Query;
 using SchoolSystem.Application.DTOs.GradesDTOs;
 using SchoolSystem.Application.Interfaces;
+using SchoolSystem.Domain.Common;
 using SchoolSystem.Infrastructure.Models;
+using System.Security.Claims;
 
 namespace SchoolSystemApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin,Teacher,Student")]
     public class GradesController : ControllerBase
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        //private readonly IGradeServices _gradeServices;
 
         public GradesController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-        //    _gradeServices = gradeServices;
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> GetAllGrades()
         {
-            //get grade with subject and student
-            var grades = await _unitOfWork.Grades.GetAllAsync(includeProperties:"Student,Subject");
+            var grades = await _unitOfWork.Grades.GetAllAsync(includeProperties: "Student,Subject");
             var gradesDto = _mapper.Map<IEnumerable<GradeDetailDto>>(grades);
             return Ok(gradesDto);
         }
-        /// <summary>
-        /// get studen name and subject and the grade of this subject  by using id
-        /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> GetGrade(int id)
         {
-            //get grade with subject and student
-            var grade = await _unitOfWork.Grades.GetFirstOrDefaultAsync(g=>g.Id==id,
-                includeProperties: "Student,Subject"
-                );
-
+            var grade = await _unitOfWork.Grades.GetFirstOrDefaultAsync(g => g.Id == id, includeProperties: "Student,Subject");
             if (grade == null)
                 return NotFound();
 
             var gradedto = _mapper.Map<GradeDetailDto>(grade);
             return Ok(gradedto);
         }
-        /// <summary>
-        /// get student name and subjects name and grades by=> using the name of student
-        /// </summary>
-        /// <param name="name"></param>
-        /// <returns></returns>
+
         [HttpGet("Student/{name}")]
+        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> GetGrade(string name)
         {
-            //get grade with subject and student
             var grade = await _unitOfWork.Grades.GetAllAsync(
-                  g => g.Student.Name.ToLower().Contains(name.ToLower()), 
-                includeProperties: "Student,Subject"
-                );
+                g => g.Student.Name.ToLower().Contains(name.ToLower()),
+                includeProperties: "Student,Subject");
 
             if (grade == null)
                 return NotFound();
@@ -72,52 +61,94 @@ namespace SchoolSystemApi.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin,Teacher")]
         public async Task<IActionResult> Create([FromBody] CreateGradeDto dto)
         {
-            // first check are student or subject is exist or not 
+            var userRole = User.FindFirstValue(ClaimTypes.Role);
+            var teacherId = User.FindFirstValue("UserId");
+
             var student = await _unitOfWork.Students.GetByIdAsync(dto.StudentId);
-            var subject = await _unitOfWork.Subjects.GetByIdAsync(dto.SubjectId);
+            var subject = await _unitOfWork.Subjects.GetFirstOrDefaultAsync(
+                s => s.SubjectId == dto.SubjectId,
+                includeProperties: "TeacherSubjects");
+
             if (student == null || subject == null)
                 return BadRequest("Student or Subject not found.");
 
-            var Newgrad = _mapper.Map<StudentGrade>(dto);
+            if (userRole == "Teacher" && !subject.TeacherSubjects.Any(ts => ts.TeacherId.ToString() == teacherId))
+                return Forbid("You can only assign grades for your own subjects.");
 
-            await _unitOfWork.Grades.AddAsync(Newgrad);
+            var newGrade = _mapper.Map<StudentGrade>(dto);
+            await _unitOfWork.Grades.AddAsync(newGrade);
             await _unitOfWork.CompleteAsync();
 
-            return Ok(Newgrad);
+            return Ok(newGrade);
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateGrade(int Id, [FromBody] CreateGradeDto dto)
+        [Authorize(Roles = "Admin,Teacher")]
+        public async Task<IActionResult> UpdateGrade(int id, [FromBody] CreateGradeDto dto)
         {
-            var oldGrade =await _unitOfWork.Grades.GetByIdAsync(Id);
+            var userRole = User.FindFirstValue(ClaimTypes.Role);
+            var teacherId = User.FindFirstValue("UserId");
+            var oldGrade = await _unitOfWork.Grades.GetByIdAsync(id);
+
             if (oldGrade == null)
                 return NotFound();
 
-            //var subject = await _unitOfWork.Subjects.GetByIdAsync(dto.SubjectId);
-            //var Student = await _unitOfWork.Students.GetByIdAsync(dto.StudentId);
+            var subject = await _unitOfWork.Subjects.GetFirstOrDefaultAsync(
+                s => s.SubjectId == dto.SubjectId,
+                includeProperties: "TeacherSubjects");
 
-            //if (Student == null || subject == null)
-            //    return BadRequest("Student or Subject not found.");
+            if (subject == null)
+                return BadRequest("Subject not found.");
+
+            if (userRole == "Teacher" && !subject.TeacherSubjects.Any(ts => ts.TeacherId.ToString() == teacherId))
+                return Forbid("You can only update grades for your own subjects.");
 
             _mapper.Map(dto, oldGrade);
             await _unitOfWork.CompleteAsync();
 
             return Ok(oldGrade);
-
-
         }
+
         [HttpDelete]
-        public async Task<IActionResult> Delete(int Id)
+        [Authorize(Roles = "Admin,Teacher")]
+        public async Task<IActionResult> Delete(int id)
         {
-            var grad = await _unitOfWork.Grades.GetByIdAsync(Id);
-            if (grad == null)
+            var userRole = User.FindFirstValue(ClaimTypes.Role);
+            var teacherId = User.FindFirstValue("UserId");
+
+            var grade = await _unitOfWork.Grades.GetFirstOrDefaultAsync(
+                g => g.Id == id,
+                includeProperties: "Subject.TeacherSubjects");
+
+            if (grade == null)
                 return NotFound();
-             _unitOfWork.Grades.Delete(grad);
+
+            if (userRole == "Teacher" && !grade.Subject.TeacherSubjects.Any(ts => ts.TeacherId.ToString() == teacherId))
+                return Forbid("You can only delete grades for your own subjects.");
+
+            _unitOfWork.Grades.Delete(grade);
             await _unitOfWork.CompleteAsync();
 
             return NoContent();
+        }
+
+
+        [HttpGet("MyGrades")]
+         public async Task<IActionResult> GetMyGrades()
+        {
+            var userIdStr = User.FindFirstValue("UserId");
+            if (!int.TryParse(userIdStr, out int studentId))
+                return BadRequest("Invalid student ID.");
+
+            var grades = await _unitOfWork.Grades.GetAllAsync(
+                g => g.StudentId == studentId,
+                includeProperties: "Subject,Student");
+
+            var gradesDto = _mapper.Map<IEnumerable<GradeDetailDto>>(grades);
+            return Ok(gradesDto);
         }
 
     }
